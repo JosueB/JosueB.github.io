@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Social Links with Bio</title>
+    <!-- Google Fonts link for Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 800px; /* Limits width on larger screens */
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 20px;
+            flex-direction: row; /* Horizontal layout by default */
+        }
+
+        .profile-pic {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #33d746;
+        }
+
+        .bio-section {
+            max-width: 350px;
+            text-align: left;
+        }
+
+        .bio-header {
+            font-size: 22px;
+            text-decoration: underline;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .bio {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 50px;
+            justify-content: center;
+        }
+
+        .social-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0073e6;
+        }
+
+        /* Mobile Responsive Styling */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stacks items vertically on small screens */
+                align-items: center;
+                gap: 20px;
+            }
+
+            .profile-pic {
+                width: 250px;
+                height: 250px;
+            }
+
+            .bio-section {
+                max-width: 100%;
+                text-align: center; /* Center align text on mobile */
+            }
+
+            .social-links {
+                flex-direction: column; /* Stacks links vertically */
+                gap: 10px;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Circular Profile Picture -->
+            <img src="images/me_chimborazo.jpg" alt="Profile Picture" class="profile-pic">
+
+            <!-- Bio Section -->
+            <div class="bio-section">
+                <h2 class="bio-header">About Me</h2>
+                <p class="bio">
+                    I'm an engineer by day and a musician by night, with a passion for both the technical and creative sides of life. 
+                    Outside of coding and creating music, I love staying active – whether it’s going to skateparks, hitting the trails for a good hike, or going for a run to clear my mind. 
+                    These activities keep me balanced, giving me fresh perspectives both in my work and music.
+                </p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <!-- LinkedIn and GitHub links -->
+            <a href="https://www.linkedin.com/in/josuebohorquez/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/JosueB" target="_blank">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
